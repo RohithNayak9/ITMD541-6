@@ -9,14 +9,6 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 main {
     display: grid;
     grid-template-rows: auto 1fr; /* Header and content area */
@@ -112,17 +104,6 @@ button:hover {
 }
 
 
-footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Add this to your existing CSS */
 
 .resultTable {
@@ -141,7 +122,6 @@ footer {
     background-color: #f2f2f2;
 }
 
-/* Your existing styles */
 
 footer {
     background-color: #000000;
@@ -164,7 +144,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Your existing styles */
 
 header {
     background-color: #000000;
@@ -172,7 +151,7 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative; /* Added for positioning the logo */
+    position: relative;
 }
 
 #logo {
@@ -183,9 +162,6 @@ header {
     transform: translateY(-50%);
 }
 
-/* ... your existing styles ... */
-
-/* Add this to your existing CSS */
 .locationTitle {
     margin-bottom: 10px;
     color: #333;
