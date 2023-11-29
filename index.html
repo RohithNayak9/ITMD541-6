@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Sunset Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="Logo" id="logo"> <!-- Replace "your-logo.png" with the actual path to your logo -->
+        <h1>Sunrise-Sunset Dashboard</h1>
+    </header>
+
+    <main>
+        <form id="locationForm">
+            <input type="text" id="locationInput" placeholder="Enter location">
+            <button type="button" onclick="getCurrentLocation()">Use Current Location</button>
+            <button type="button" onclick="searchLocation()">Search</button>
+            <select id="topCapitals" onchange="selectCapital(this.value)">
+                <option value="" selected disabled>Select a Location</option>
+                <option value="New York">New York</option>
+		<option value="London">London</option>
+		<option value="Paris">Paris</option>
+		<option value="Tokyo">Tokyo</option>
+		<option value="Beijing">Beijing</option>
+		<option value="Sydney">Sydney</option>
+		<option value="Manipal">Manipal</option>
+		<option value="Udupi">Udupi</option>
+		<option value="Berlin">Berlin</option>
+		<option value="Rome">Rome</option>
+		<option value="Cairo">Cairo</option>
+            </select>
+        </form>
+
+        <div id="resultContainer">
+            <!-- Data will be displayed here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by <a href="https://sunrisesunset.io/api/">sunrisesunset.io</a> and <a href="https://geocode.maps.co/">geocode.maps.co</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

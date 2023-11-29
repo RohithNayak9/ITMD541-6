@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Header and content area */
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#locationForm {
+    display: flex;
+    gap: 10px;
+}
+
+#locationInput {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#locationInput:focus {
+    border-color: #3498db;
+}
+
+#capitalDropdown {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#capitalDropdown:focus {
+    border-color: #3498db;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#resultContainer {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resultContainer p {
+    margin-bottom: 10px;
+}
+
+/* Your existing styles */
+
+/* Add this to your existing CSS */
+.locationTitle {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.resultTable th, .resultTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.resultTable th {
+    background-color: #f2f2f2;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this to your existing CSS */
+
+.resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.resultTable th, .resultTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.resultTable th {
+    background-color: #f2f2f2;
+}
+
+/* Your existing styles */
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Your existing styles */
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Added for positioning the logo */
+}
+
+#logo {
+    max-width: 100px; /* Adjust the width as needed */
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ... your existing styles ... */
+
+/* Add this to your existing CSS */
+.locationTitle {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resultTable th, .resultTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.resultTable th {
+    background-color: #f2f2f2;
+}
+
+
+body {
+    background-image: url('sunset.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust the last value (0.9) for the desired transparency */
+
+    /* Add the following styles to ensure the background covers the entire viewport */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectContainer {
+    margin-bottom: 20px;
+}
+
+#locationForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#locationInput,
+#topCapitals {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    #locationForm {
+        flex-direction: column;
+        align-items: center;
+    }
+    #locationForm > * {
+        flex: 1 1 100%; 
+    }
+
+    #locationInput, #topCapitals, button {
+        width: calc(100% - 20px); 
+        margin-bottom: 10px;
+    }
+
+    header, footer {
+        padding: 10px; 
+    }
+}
+
+
