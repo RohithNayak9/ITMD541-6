@@ -225,11 +225,11 @@ body {
 @media screen and (max-width: 768px) {
     #logo {
         max-width: 60px;
-        left: 10px;
+        left: 8px;
     }
 
     header h1 {
-        font-size: 24px; 
+        font-size: 50px; 
     }
 
     #locationForm {
