@@ -247,20 +247,30 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        padding: 10px; 
+    }
+
+    #logo {
+        max-width: 80px; /* Adjust the width as needed */
+        left: 10px;
+    }
+
     #locationForm {
         flex-direction: column;
         align-items: center;
     }
-    #locationForm > * {
-        flex: 1 1 100%; 
-    }
 
-    #locationInput, #topCapitals, button {
-        width: calc(100% - 20px); 
+    #locationForm > * {
+        width: calc(100% - 20px);
         margin-bottom: 10px;
     }
 
-    header, footer {
+    #locationInput, #capitalDropdown, button {
+        width: calc(100% - 20px); 
+    }
+
+    footer {
         padding: 10px; 
     }
 }
