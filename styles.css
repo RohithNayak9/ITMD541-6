@@ -249,12 +249,16 @@ body {
 @media screen and (max-width: 768px) {
     header {
         padding: 10px; 
-        font-size: 8px; /* Adjust the font size as needed */
+        font-size: 16px; /* Adjust the font size as needed */
     }
 
     #logo {
         max-width: 60px; /* Adjust the width as needed */
         left: 10px;
+    }
+
+    header h1 {
+        font-size: 16px; /* Adjust the font size as needed */
     }
 
     #locationForm {
@@ -275,6 +279,7 @@ body {
         padding: 10px; 
     }
 }
+
 
 
 
