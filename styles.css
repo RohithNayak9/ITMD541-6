@@ -251,9 +251,13 @@ body {
         padding: 10px; 
     }
 
+    header {
+        padding: 20px;
+    }
+
     #logo {
-        max-width: 80px; /* Adjust the width as needed */
-        left: 10px;
+        max-width: 40px; /* Adjust the width as needed */
+        left: 5px;
     }
 
     #locationForm {
