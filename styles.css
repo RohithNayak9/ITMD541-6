@@ -249,7 +249,7 @@ body {
 @media screen and (max-width: 768px) {
     header {
         padding: 10px; 
-        font-size: 16px; /* Adjust the font size as needed */
+        font-size: 8px; /* Adjust the font size as needed */
     }
 
     #logo {
