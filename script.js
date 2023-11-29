@@ -20,10 +20,9 @@ function updateUI(yesterdayData, todayData, tomorrowData, selectedLocation) {
 
         // Create a title indicating the selected location
         const title = document.createElement('h2');
-     	// Create a span element for selectedLocation with specific style
         const locationSpan = document.createElement('span');
         locationSpan.textContent = selectedLocation;
-        locationSpan.style.color = 'blue'; // Change to your desired color
+        locationSpan.style.color = 'blue'; 
         locationSpan.style.fontWeight = 'bold';
 
         // Append the span to the title
@@ -92,7 +91,6 @@ function addTableRow(table, property, yesterdayValue, todayValue, tomorrowValue)
         case 'solar noon':
             iconHtml = '☀️'; // Sun icon
             break;
-        // Add cases for other properties as needed
         default:
             break;
     }
@@ -162,7 +160,6 @@ function getCurrentLocation() {
 function searchLocation() {
     const locationInput = document.getElementById('locationInput').value;
 
-    // Use the correct geocoding API URL
     const geocodeUrl = `https://geocode.maps.co/search?q=${locationInput}`;
 
     fetch(geocodeUrl)
@@ -191,7 +188,6 @@ function searchLocation() {
             tomorrow.setDate(new Date().getDate() + 1);
             const formattedTomorrow = tomorrow.toISOString().split('T')[0];
 
-            // Make separate API calls for yesterday, today, and tomorrow
             Promise.all([
                 fetchSunriseSunsetData(latitude, longitude, formattedYesterday),
                 fetchSunriseSunsetData(latitude, longitude, today),
@@ -225,7 +221,6 @@ function handleEnterKey(event) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Listen for 'Enter' key press in the input field
     document.getElementById('locationInput').addEventListener('keydown', handleEnterKey);
 
 });
