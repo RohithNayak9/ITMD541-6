@@ -69,22 +69,35 @@ function addTableRow(table, property, yesterdayValue, todayValue, tomorrowValue)
     const todayCell = row.insertCell(2);
     const tomorrowCell = row.insertCell(3);
 
-    // Add Font Awesome icons to the property cells
+    let iconHtml = '';
     switch (property.toLowerCase()) {
         case 'timezone':
-            propertyCell.innerHTML = '<i class="fas fa-globe"></i> ' + property;
+            iconHtml = '🌐'; // Globe icon
             break;
         case 'sunrise':
-            propertyCell.innerHTML = '<i class="fas fa-sun"></i> ' + property;
+            iconHtml = '🌅'; // Sunrise icon
             break;
         case 'sunset':
-            propertyCell.innerHTML = '<i class="fas fa-moon"></i> ' + property;
+            iconHtml = '🌇'; // Sunset icon
             break;
-        // Add cases for other properties
+        case 'dawn':
+            iconHtml = '🌄'; // Dawn icon
+            break;
+        case 'dusk':
+            iconHtml = '🌆'; // Dusk icon
+            break;
+        case 'day length':
+            iconHtml = '⏳'; // Hourglass icon
+            break;
+        case 'solar noon':
+            iconHtml = '☀️'; // Sun icon
+            break;
+        // Add cases for other properties as needed
         default:
-            propertyCell.textContent = property;
+            break;
     }
 
+    propertyCell.innerHTML = `<span class="icon">${iconHtml}</span>${property}`;
     yesterdayCell.textContent = yesterdayValue;
     todayCell.textContent = todayValue;
     tomorrowCell.textContent = tomorrowValue;
