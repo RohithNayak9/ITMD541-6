@@ -11,7 +11,7 @@ body {
 
 main {
     display: grid;
-    grid-template-rows: auto 1fr; /* Header and content area */
+    grid-template-rows: auto 1fr; 
     max-width: 800px;
     margin: 20px auto;
     background-color: #ffffff;
@@ -79,9 +79,7 @@ button:hover {
     margin-bottom: 10px;
 }
 
-/* Your existing styles */
 
-/* Add this to your existing CSS */
 .locationTitle {
     margin-bottom: 10px;
     color: #333;
@@ -155,7 +153,7 @@ header {
 }
 
 #logo {
-    max-width: 100px; /* Adjust the width as needed */
+    max-width: 100px; 
     position: absolute;
     left: 20px;
     top: 50%;
@@ -188,13 +186,13 @@ header {
 
 
 body {
-    background-image: url('sunset.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your background image */
+    background-image: url('sunset.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(255, 255, 255, 0.9); /* Adjust the last value (0.9) for the desired transparency */
+    background-color: rgba(255, 255, 255, 0.9); 
 
-    /* Add the following styles to ensure the background covers the entire viewport */
+
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -223,6 +221,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        padding: 10px; 
+    }
     
     #logo {
         max-width: 60px;
